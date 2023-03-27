@@ -20,6 +20,7 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
   security:
     runs-on: ubuntu-latest
+    permissions: write-all 
     name: Run the SCA scan on the source code
     steps:
       - uses: actions/checkout@master
